@@ -71,12 +71,10 @@ int main() {
 	//	}
 	//	y2 = y3;
 	//	y3--;
-	//}
-
-	int i2 = 1;
+	//} 
+	
 
 	for (int i1 = 0; i1 < NMatrix; i1++) {
-		perehod:
 		for (int i = 0; i < NRow; i++) {
 			for (int j = 0; j < NCols; j++) {
 				cout << Matrix[i][j];
