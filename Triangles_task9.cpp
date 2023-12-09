@@ -6,6 +6,17 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+int proverka(int a) {
+	while (cin.fail() || a < 0) {
+		cin.clear();
+		cin.ignore(1000, '\n');
+		cout << "Ошибка ввода данных, введите значение заново: ";
+		cin >> a;
+	}
+
+	return a;
+}
+
 int main() {
 
 	SetConsoleCP(1251);
@@ -15,9 +26,11 @@ int main() {
 
 	cout << "Укажите количество треугольников: ";
 	cin >> NMatrix;
+	proverka(NMatrix);
 
 	cout << "Укажите количество строк в треугольниках: ";
 	cin >> NRow;
+	proverka(NRow);
 
 	int NCols = (NRow * 2)-1;
 
@@ -81,6 +94,7 @@ int main() {
 			}
 			cout << endl;
 		}
+		cout << endl;
 	}
 
 	system("pause");
