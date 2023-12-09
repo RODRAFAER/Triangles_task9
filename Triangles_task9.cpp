@@ -26,11 +26,11 @@ int main() {
 
 	cout << "Укажите количество треугольников: ";
 	cin >> NMatrix;
-	proverka(NMatrix);
+	NMatrix = proverka(NMatrix);
 
 	cout << "Укажите количество строк в треугольниках: ";
 	cin >> NRow;
-	proverka(NRow);
+	NRow = proverka(NRow);
 
 	int NCols = (NRow * 2)-1;
 
