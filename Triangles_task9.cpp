@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <cstdlib>
+#include <Windows.h>
 
 
 using std::cout;
@@ -18,6 +19,9 @@ int proverka(int a) {
 }
 
 int main() {
+
+	SetConsoleCP(1251);
+	SetConcoleOutputCP(1251);
 
 	int NMatrix, NRow;
 
