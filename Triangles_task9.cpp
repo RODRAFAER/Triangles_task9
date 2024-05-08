@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 #include <cstdlib>
-#include <Windows.h>
+
 
 using std::cout;
 using std::cin;
@@ -18,9 +18,6 @@ int proverka(int a) {
 }
 
 int main() {
-
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
 
 	int NMatrix, NRow;
 
